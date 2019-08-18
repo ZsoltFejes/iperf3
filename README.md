@@ -1,10 +1,16 @@
-#Iperf3 is used to test network performance and bandwidth between machines.
+Iperf3 in containerized environment
+====
 
-#How to use it
+Iperf3 is used to test network performance and bandwidth between machines.
 
-As Server docker run -it --rm -p 5201:5201/udp -p 5201:5201/tcp --name Iperf3 zsoltfejes/iperf3 -s
+How to use it
+===
 
-As host:
+As Server
+
+docker run -it --rm -p 5201:5201/udp -p 5201:5201/tcp --name Iperf3 zsoltfejes/iperf3 -s
+
+# As host:
 
 docker run -it --rm --name Iperf3 zsoltfejes/iperf3 -c
 
