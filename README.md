@@ -11,7 +11,7 @@ As Server
 
 docker run -it --rm -p 5201:5201/udp -p 5201:5201/tcp --name Iperf3 zsoltfejes/iperf3 -s
 
-Server as a deamon
+Server as a daemon
 
 docker run -d --rm -p 5201:5201/udp -p 5201:5201/tcp --name Iperf3 zsoltfejes/iperf3 -s -d
 
